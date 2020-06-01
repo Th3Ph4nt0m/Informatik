@@ -17,6 +17,9 @@ package de.th3ph4nt0m.info.kw22;
     {
         results = new int[rounds];
         this.rounds = rounds;
+        simulate();
+        printResults();
+        countArray();
     }
 
     public void simulate()
@@ -35,7 +38,7 @@ package de.th3ph4nt0m.info.kw22;
 
     public void countArray()
     {
-        int[] frequency = new int[6];
+        int[] frequency = new int[results.length];
         int visited = -1;
         for (int i = 0; i < results.length; i++) {
             int count = 1;
@@ -59,7 +62,7 @@ package de.th3ph4nt0m.info.kw22;
             if (frequency[i] != visited) {
                 System.out.println("    " + results[i] + "    |    " + frequency[i]);
             }
-            System.out.println("----------------------------------------");
         }
+        System.out.println("----------------------------------------");
     }
 }

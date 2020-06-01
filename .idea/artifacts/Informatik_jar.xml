@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Informatik:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Informatik_jar</output-path>
+    <root id="archive" name="Informatik.jar">
+      <element id="module-output" name="Informatik" />
+    </root>
+  </artifact>
+</component>

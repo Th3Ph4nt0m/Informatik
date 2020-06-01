@@ -14,17 +14,17 @@ package de.th3ph4nt0m.info.kw22;
 
     public Simulation()
     {
-        results = new int[5];
+        results = new int[1000];
     }
 
     public void simulate(){
-        for(int i = 0; i<4; i++){
+        for(int i = 0; i<999; i++){
             results[i] = (int) (Math.random()*6+1);
         }
     }
 
     public void printResults(){
-        for(int i = 0; i<4; i++){
+        for(int i = 0; i<999; i++){
             System.out.println("Wurf " + i + ": " + results[i]);
         }
     }

@@ -7,22 +7,37 @@
 
 package de.th3ph4nt0m.info.kw22;
 
-@SuppressWarnings ({"unused", "SpellCheckingInspection", "InfiniteRecursion"})
-public class Book extends Medium
+@SuppressWarnings ({"unused", "InfiniteRecursion"}) public class Book extends Medium
 {
     private final int page;
 
+    /**
+     *
+     * @param publish publishing year -> Medium
+     * @param author author -> Medium
+     * @param page number of pages
+     */
     public Book(int publish, String author, int page)
     {
+        //access the constructor of Medium.java
         super(publish, author);
+        //initialize attribute page with parameter page
         this.page = page;
     }
 
+    //setter-method for author, unnecessary because it's similar to super#setAuthor
+
+    /**
+     *
+     * @param author author
+     * @throws RuntimeException infinite recursion
+     */
     public void setAuthor(String author){
         setAuthor(author);
     }
 
+    //generates a String to describe the book with all given information
     public String toString(){
-        return "Das Buch von " + getAuthor() + " erschien " + getPublish() + " mit " + page + " Seiten.";
+        return "The book by " + getAuthor() + " published " + getPublish() + " with " + page + " pages.";
     }
 }

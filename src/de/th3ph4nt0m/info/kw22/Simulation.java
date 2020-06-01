@@ -13,6 +13,9 @@ package de.th3ph4nt0m.info.kw22;
     private final int[] results;
     private final int rounds;
 
+    /**
+     * @param rounds number of rounds
+     */
     public Simulation(int rounds)
     {
         results = new int[rounds];
@@ -22,6 +25,9 @@ package de.th3ph4nt0m.info.kw22;
         countArray();
     }
 
+    /**
+     * start the simulation
+     */
     public void simulate()
     {
         for (int i = 0; i < rounds; i++) {
@@ -29,6 +35,9 @@ package de.th3ph4nt0m.info.kw22;
         }
     }
 
+    /**
+     * print the results of the simulation
+     */
     public void printResults()
     {
         for (int i = 0; i < rounds; i++) {

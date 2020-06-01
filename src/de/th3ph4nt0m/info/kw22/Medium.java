@@ -12,21 +12,29 @@ public class Medium
     private final int publish;
     private String author;
 
+    /**
+     *
+     * @param publish publishing year
+     * @param author author of the medium
+     */
     public Medium(int publish, String author){
         this.publish = publish;
         this.author = author;
     }
 
+    //getter-method for author
     public String getAuthor()
     {
         return author;
     }
 
+    //getter-method for publish
     public int getPublish()
     {
         return publish;
     }
 
+    //setter-method for author
     protected void setAuthor(String author)
     {
         this.author = author;

@@ -1,27 +1,34 @@
+/*
+ * Copyright (c) 2020 Henrik Steffens aka Th3Ph4nt0m
+ *
+ * Medium.java is part of the Informatik
+ * Last edit: 2020.6.1
+ */
+
 package de.th3ph4nt0m.info.kw22;
 
-@SuppressWarnings ("SpellCheckingInspection") public class Medium
+public class Medium
 {
-    private final int erscheinungsjahr;
-    private String urheber;
+    private final int publish;
+    private String author;
 
-    public Medium(int erscheinungsjahr, String urheber){
-        this.erscheinungsjahr = erscheinungsjahr;
-        this.urheber = urheber;
+    public Medium(int publish, String author){
+        this.publish = publish;
+        this.author = author;
     }
 
-    public String getUrheber()
+    public String getAuthor()
     {
-        return urheber;
+        return author;
     }
 
-    public int getErscheinungsjahr()
+    public int getPublish()
     {
-        return erscheinungsjahr;
+        return publish;
     }
 
-    protected void setUrheber(String urheber)
+    protected void setAuthor(String author)
     {
-        this.urheber = urheber;
+        this.author = author;
     }
 }

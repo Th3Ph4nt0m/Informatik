@@ -11,20 +11,22 @@ package de.th3ph4nt0m.info.kw22;
 {
 
     private final int[] results;
+    private int rounds;
 
-    public Simulation()
+    public Simulation(int rounds)
     {
-        results = new int[1000];
+        results = new int[rounds];
+        this.rounds = rounds;
     }
 
     public void simulate(){
-        for(int i = 0; i<999; i++){
+        for(int i = 0; i<rounds; i++){
             results[i] = (int) (Math.random()*6+1);
         }
     }
 
     public void printResults(){
-        for(int i = 0; i<999; i++){
+        for(int i = 0; i<rounds; i++){
             System.out.println("Wurf " + i + ": " + results[i]);
         }
     }
